@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/jersey10regular"
+                android:gravity="center"
+                android:text="Fittix Health"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondeado_button"
+                android:elevation="20dp"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/editTextWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jersey10regular"
+                    android:hint="Peso (kg)"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextWeight"
+                    android:fontFamily="@font/jersey10regular"
+                    android:hint="Altura (m)"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/buttonCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextHeight"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/jersey10regular"
+                    android:text="Calculate"
+                    android:textColor="@color/azul"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textViewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buttonCalculate"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/azul"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:fontFamily="@font/jersey10regular"
+                    android:id="@+id/textViewAdvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buttonCalculate"
+                    android:layout_marginTop="50dp"
+                    android:maxHeight="200dp"
+                    android:paddingTop="9dp"
+                    android:text=""
+                    android:textColor="@android:color/black" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnDonar"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="98dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/jersey10regular"
+                android:gravity="center"
+                android:text="Apoya al creador!"
+                android:textColor="@color/azul"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>
