@@ -78,6 +78,7 @@
                     android:textSize="20dp" />
 
                 <Button
+                    android:layout_marginTop="10dp"
                     android:id="@+id/buttonCalculate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -89,12 +90,13 @@
                     android:textSize="20dp" />
 
                 <TextView
+                    android:text=""
+                    android:fontFamily="@font/jersey10regular"
                     android:id="@+id/textViewResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/buttonCalculate"
                     android:layout_marginTop="10dp"
-                    android:paddingTop="9dp"
                     android:textAlignment="center"
                     android:textColor="@color/azul"
                     android:textSize="24sp"
@@ -109,7 +111,6 @@
                     android:layout_below="@id/buttonCalculate"
                     android:layout_marginTop="50dp"
                     android:maxHeight="200dp"
-                    android:paddingTop="9dp"
                     android:text=""
                     android:textColor="@android:color/black" />
 
@@ -132,7 +133,7 @@
                 android:gravity="center"
                 android:text="Apoya al creador!"
                 android:textColor="@color/azul"
-                android:textSize="15dp" />
+                android:textSize="17dp" />
 
         </RelativeLayout>
 
